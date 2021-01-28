@@ -32,7 +32,7 @@ export default {
   data(){
     return{
       api_key:  'a992b64b83dab707bd9176fb9ead49e7',
-      url_base: 'https://cors-anywhere.herokuapp.com/https:/api.openweathermap.org/data/2.5/',
+      url_base: 'https:/api.openweathermap.org/data/2.5/',
       lang: 'ro',
       img_link: null ,     
       query: '',
