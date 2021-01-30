@@ -17,8 +17,7 @@
     <div class="weather-box">
       <div class="temp">{{Math.round(weather.main.temp)}}°C</div>
       <div class="weather">{{traducereVreme(weather.weather[0].main)}}</div>
-      <div class=""><img :src="getPic(iconVreme(weather.weather[0].main))" v-bind:alt="iconVreme(weather.weather[0].main)" height="100px" width="100px"></div>
-      <div class=""><img class="img-meteo" src="./assets/vreme-icon/cloudy.png" alt="Nimic"></div>
+      <div class=""><img class="img-meteo" :src="require(`${this.getPic(this.iconVreme(this.weather.weather[0].main))}`)" v-bind:alt="iconVreme(weather.weather[0].main)" height="100px" width="100px"></div>
     </div>
   </div>
 </main>
